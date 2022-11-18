@@ -1,0 +1,20 @@
+"id","ident","type","name","latitude_deg","longitude_deg","elevation_ft","continent","iso_country","iso_region","municipality","scheduled_service","gps_code","iata_code","local_code","home_link","wikipedia_link","keywords"
+6523,"00A","heliport","Total Rf Heliport",40.07080078125,-74.93360137939453,11,"NA","US","US-PA","Bensalem","no","00A",,"00A",,,
+323361,"00AA","small_airport","Aero B Ranch Airport",38.704022,-101.473911,3435,"NA","US","US-KS","Leoti","no","00AA",,"00AA",,,
+6524,"00AK","small_airport","Lowell Field",59.94919968,-151.695999146,450,"NA","US","US-AK","Anchor Point","no","00AK",,"00AK",,,
+6525,"00AL","small_airport","Epps Airpark",34.86479949951172,-86.77030181884766,820,"NA","US","US-AL","Harvest","no","00AL",,"00AL",,,
+7456,"0OK3","small_airport","Mckinley Ranch Airport",35.614465,-98.534403,1420,"NA","US","US-OK","Geary","no","0OK3",,"0OK3",,,"Groendyke Ranch"
+7457,"0OK4","small_airport","Rock Creek Farm Airport",34.66059875488281,-96.25360107421875,730,"NA","US","US-OK","Coal Gate","no","0OK4",,"0OK4",,,
+7458,"0OK5","small_airport","Chappell Airport",35.88890075683594,-97.40029907226562,1070,"NA","US","US-OK","Guthrie","no","0OK5",,"0OK5",,,
+7459,"0OK6","small_airport","Ellis/Harvey Airport",35.801700592041016,-97.38610076904297,1220,"NA","US","US-OK","Guthrie","no","0OK6",,"0OK6",,,
+7460,"0OK7","heliport","Shattuck Hospital Heliport",36.25,-99.87539672851562,2200,"NA","US","US-OK","Shattuck","no","0OK7",,"0OK7",,,
+7461,"0OK8","closed","Cade's Airport",36.2925,-97.593102,1140,"NA","US","US-OK","Covington","no",,,,,,"0OK8"
+7462,"0OK9","small_airport","Crystal Airport",36.213401794433594,-96.63700103759766,1016,"NA","US","US-OK","Jennings","no","0OK9",,"0OK9",,,
+7463,"0OR0","heliport","Providence Hospital Heliport",42.3386993408,-122.861999512,1350,"NA","US","US-OR","Medford","no","0OR0",,"0OR0",,"https://en.wikipedia.org/wiki/Providence_Hospital_Heliport",
+7465,"0OR2","heliport","Hendershots Heliport",42.133201599121094,-123.45099639892578,1200,"NA","US","US-OR","Merlin","no","0OR2",,"0OR2",,,
+7466,"0OR3","small_airport","Long Ranch Airport",42.01900100708008,-121.7040023803711,4090,"NA","US","US-OR","Merrill","no","0OR3",,"0OR3",,,
+7467,"0OR4","heliport","Round Butte Heliport",44.61650085449219,-121.26799774169922,2125,"NA","US","US-OR","Metolius","no","0OR4",,"0OR4",,,
+7468,"0OR5","small_airport","East Oregon Cattle Co Airport",42.5035018921,-122.855003357,1345,"NA","US","US-OR","Eagle Point","no","0OR5",,"0OR5",,,
+7469,"0OR6","small_airport","Rome Service Airport",42.83399963378906,-117.62899780273438,3387,"NA","US","US-OR","Rome","no","0OR6",,"0OR6",,,
+7470,"0OR7","small_airport","Marr Field",44.854000091552734,-123.26399993896484,275,"NA","US","US-OR","Monmouth","no","0OR7",,"0OR7",,,
+7471,"0OR8","small_airport","Sutton on Rogue Airport",42.484798431396484,-122.86599731445312,1260,"NA","US","US-OR","White City","no","0OR8",,"0OR8",,,
