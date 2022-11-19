@@ -1,4 +1,4 @@
-package com.example.airport.reader;
+package com.example.airport.component.reader;
 
 import com.example.airport.exception.InputDataReadException;
 import com.example.airport.service.CSVReaderService;

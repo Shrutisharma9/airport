@@ -1,4 +1,4 @@
-package com.example.airport.reader;
+package com.example.airport.component.reader;
 
 import com.example.airport.data.model.CountryEntity;
 import lombok.extern.slf4j.Slf4j;

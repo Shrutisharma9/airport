@@ -7,6 +7,7 @@ import com.example.airport.data.repository.AirportRepository;
 import com.example.airport.data.repository.CountryRepository;
 import com.example.airport.hibernatesearch.CountryDaoSearch;
 import com.example.airport.service.DataRetrievalService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,7 @@ import java.util.Set;
 /**
  * Data rerievel layer interact with data repository in transactional manner
  */
+@Slf4j
 @Service
 @Transactional
 public class DataRetrievalServiceImpl implements DataRetrievalService {
@@ -36,7 +38,12 @@ public class DataRetrievalServiceImpl implements DataRetrievalService {
 
     @Override
     public Set<RunwayEntity> retrieveRunwaysByCountryCodeOrName(final String countryCode, final String countryName) {
-        final CountryEntity country = countryRepository.findByCodeOrName(countryCode, countryName);
+        String countryCodeUpperCase = countryCode != null ? countryCode.toUpperCase() : countryCode;
+        if (StringUtils.isEmpty(countryCodeUpperCase) && StringUtils.isEmpty(countryName)) {
+            log.warn("Both of the parameter are empty, returning empty string");
+             return new HashSet<>();
+        }
+        final CountryEntity country = countryRepository.findByCodeOrName(countryCodeUpperCase, countryName);
         final Set<RunwayEntity> runwayEntities = new HashSet<>();
         if (country != null) {
             final Set<AirportEntity> airports = country.getAirports();

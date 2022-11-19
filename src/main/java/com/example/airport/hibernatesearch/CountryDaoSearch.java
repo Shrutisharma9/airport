@@ -30,7 +30,7 @@ public class CountryDaoSearch {
                 .get();
     }
 
-    private FullTextQuery getJpaQuery(org.apache.lucene.search.Query luceneQuery) {
+    private FullTextQuery getJpaQuery(Query luceneQuery) {
 
         FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(entityManager);
 
