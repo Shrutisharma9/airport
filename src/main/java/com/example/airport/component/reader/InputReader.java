@@ -11,6 +11,10 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * this class is responsible to read and write records from csv to database for countries, airports and runways
+ * @param <T>
+ */
 @Slf4j
 public abstract class InputReader<T> {
 

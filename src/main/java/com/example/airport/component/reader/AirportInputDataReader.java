@@ -18,6 +18,11 @@ public class AirportInputDataReader extends InputReader<AirportEntity> {
     private CountryRepository countryRepository;
 
 
+    /**
+     * read and save airports data from csv to database
+     * @param airportRecords
+     * @return
+     */
     protected List<AirportEntity> buildEntities(List<String[]> airportRecords) {
         //"id","ident","type","name","latitude_deg","longitude_deg","elevation_ft","continent","iso_country","iso_region",
         // "municipality","scheduled_service","gps_code","iata_code","local_code","home_link","wikipedia_link","keywords"
@@ -64,6 +69,11 @@ public class AirportInputDataReader extends InputReader<AirportEntity> {
         return airportEntities;
     }
 
+    /**
+     * retrieve country code from countries table
+     * @param countryCode
+     * @return
+     */
     private CountryEntity findCountry(final String countryCode) {
         if(countryCode != null){
             final CountryEntity byCode = countryRepository.findByCode(countryCode);

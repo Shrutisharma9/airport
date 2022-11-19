@@ -36,6 +36,12 @@ public class DataRetrievalServiceImpl implements DataRetrievalService {
     @Autowired
     CountryDaoSearch countryDaoSearch;
 
+    /**
+     * retrieving runways data of airports based on country name or country code
+     * @param countryCode
+     * @param countryName
+     * @return
+     */
     @Override
     public Set<RunwayEntity> retrieveRunwaysByCountryCodeOrName(final String countryCode, final String countryName) {
         String countryCodeUpperCase = countryCode != null ? countryCode.toUpperCase() : countryCode;
@@ -58,6 +64,10 @@ public class DataRetrievalServiceImpl implements DataRetrievalService {
         return runwayEntities;
     }
 
+    /**
+     * retrieving top 10 countries based on maximum number of airports
+     * @return
+     */
     @Override
     public List<CountryEntity> retrieveTop10CountriesWithMaximumNumberOfAirport(){
         final List<Long> countryIds = airportRepository.retrieveTop10CountriesWithMaximumNumberOfAirport();
@@ -68,6 +78,11 @@ public class DataRetrievalServiceImpl implements DataRetrievalService {
         return countryEntities;
     }
 
+    /**
+     * return list of countries based on entered input
+     * @param text
+     * @return
+     */
     @Override
     public List<CountryEntity> fuzzySearchCountryByName(String text){
         List<CountryEntity> countryEntities = new ArrayList<>();
@@ -76,7 +91,5 @@ public class DataRetrievalServiceImpl implements DataRetrievalService {
         }
         return countryEntities;
     }
-
-
 
 }

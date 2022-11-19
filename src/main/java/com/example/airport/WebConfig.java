@@ -7,6 +7,9 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
+/**
+ * this class is responsible for mvc configuration, to initialize front end home page & invoke with back end
+ */
 @EnableWebMvc
 @Configuration
 public class WebConfig {

@@ -2,9 +2,42 @@
 Airport Assessment using java, springboot, maven, h2 database to search airport, find runways for each airport by country and top 10 countries with highest number of airports.
 
 # Introduction
-this is the project to search airport, find runways for each airport by country and top 10 countries with highest number of airports, and to find different countries.
-When we run the application home page will open as shown in below figure, where we can perform different search operations:
+This is the project to search airport, find runways for each airport by country and top 10 countries with the highest number of airports, and to find different countries.
+When we run the application home page will open, where we can perform different search operations.
+# Technology & Version used
+#### JAVA1.8
+    Download java1.8 openJDK
+    extract zip or install if its .exe file
+    add JAVA_HOME in system variable
+    add Path in environment variable 
+    verify java: open command prompt and execute java -version
+#### Maven 
+    Download maven from https://maven.apache.org/download.cgi 
+    Extract folder
+    Add MAVEN_HOME in system variable
+    Add Maven Path in environment variable
+    verify maven: open command prompt and execute mvn -version    
 
-![image](https://user-images.githubusercontent.com/117658621/202674497-288cfba0-87cd-4d21-9fe8-ba65ac1e4a58.png)
+#### Springboot 2.6.13
+#### H2 database 2.1.214
+#### Hibernate 5.11.11.Final
+#### openCsv, CSS, Freemarker
+### Result page screenshots
+
+##### Home Page
+![img.png](img.png)
+##### When click on List Countries button it shows top 10 countries with the highest number of airports
+![img_1.png](img_1.png)
+##### Fuzzy Search
+![img_2.png](img_2.png)
+##### Search for airports based on country code or name 
+![img_3.png](img_3.png)
+##### If we pass wrong values 
+![img_4.png](img_4.png)
+
+![img_5.png](img_5.png)
+
+### TODO
+This application can be more user-friendly, country name and country code can be in single search box, performance can be improved more.
 
 

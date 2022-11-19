@@ -14,6 +14,9 @@ import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * this performs fuzzy search with autocomplete functionality
+ */
 @Repository
 public class CountryDaoSearch {
 

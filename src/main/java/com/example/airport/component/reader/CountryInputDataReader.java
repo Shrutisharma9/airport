@@ -12,6 +12,11 @@ import java.util.List;
 public class CountryInputDataReader extends InputReader<CountryEntity> {
 
 
+    /**
+     * read and save countries data from csv to database
+     * @param countryRecords
+     * @return
+     */
     protected List<CountryEntity> buildEntities(List<String[]> countryRecords) {
         //"id","code","name","continent","wikipedia_link","keywords"
         final List<CountryEntity> countryEntities = new ArrayList<>();

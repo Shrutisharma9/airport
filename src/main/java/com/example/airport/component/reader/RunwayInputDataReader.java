@@ -18,6 +18,11 @@ public class RunwayInputDataReader extends InputReader<RunwayEntity> {
     @Autowired
     AirportRepository airportRepository;
 
+    /**
+     * read and save runways record based on each airport from csv to database
+     * @param runwayRecords
+     * @return
+     */
     protected List<RunwayEntity> buildEntities(List<String[]> runwayRecords) {
        // "id","airport_ref","airport_ident","length_ft","width_ft","surface","lighted","closed",
         // "le_ident","le_latitude_deg","le_longitude_deg","le_elevation_ft",
@@ -61,7 +66,11 @@ public class RunwayInputDataReader extends InputReader<RunwayEntity> {
         return runwayEntities;
     }
 
-
+    /**
+     * retrieves the airport reference id
+     * @param referenceId
+     * @return
+     */
     private Optional<AirportEntity> findAirport(final Long referenceId) {
         if(referenceId != null){
             return airportRepository.findById(referenceId);
