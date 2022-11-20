@@ -5,6 +5,7 @@ import com.example.airport.service.CSVReaderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.InputStream;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
@@ -23,10 +24,10 @@ public abstract class InputReader<T> {
     private Map<String, Integer> keyToIndexMap;
     private String[] records;
 
-    public List<T> processInput(final Path path) {
+    public List<T> processInput(InputStream inputStream) {
         try {
-            if (path != null) {
-                final List<String[]> countryRecords = csvReaderService.readAllLines(path);
+            if (inputStream != null) {
+                final List<String[]> countryRecords = csvReaderService.readAllLines(inputStream);
                 return buildEntities(countryRecords);
             } else {
                 log.warn("Provided path of input file is null");
@@ -34,7 +35,7 @@ public abstract class InputReader<T> {
             }
 
         } catch (Exception e) {
-            log.error("An error occurred while reading data from path {}", path.toUri(), e);
+            log.error("An error occurred while reading data",  e);
             throw new InputDataReadException("An error occurred while reading data", e);
 
         }

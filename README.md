@@ -11,7 +11,7 @@ When we run the application home page will open, where we can perform different 
     add JAVA_HOME in system variable
     add Path in environment variable 
     verify java: open command prompt and execute java -version
-#### Maven 
+#### Maven 3.8.6
     Download maven from https://maven.apache.org/download.cgi 
     Extract folder
     Add MAVEN_HOME in system variable
@@ -22,8 +22,18 @@ When we run the application home page will open, where we can perform different 
 #### H2 database 2.1.214
 #### Hibernate 5.11.11.Final
 #### openCsv, CSS, Freemarker
-### Result page screenshots
+### How to run locally
+To build project:
 
+    mvn clean install
+
+Then to run the project:
+
+    java -jar /target/airport-0.0.1.jar
+    or
+    mvn sring-boot:run
+
+### Result page screenshots
 ##### Home Page
 ![img.png](img.png)
 ##### When click on List Countries button it shows top 10 countries with the highest number of airports
@@ -37,7 +47,5 @@ When we run the application home page will open, where we can perform different 
 
 ![img_5.png](img_5.png)
 
-### TODO
-This application can be more user-friendly, country name and country code can be in single search box, performance can be improved more.
 
 

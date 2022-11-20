@@ -1,8 +1,11 @@
 package com.example.airport.service;
 
+import java.io.InputStream;
 import java.nio.file.Path;
 import java.util.List;
 
 public interface CSVReaderService {
-    List<String[]> readAllLines(Path filePath) throws Exception;
+
+    public List<String[]> readAllLines(InputStream inputStream) throws Exception;
+
 }

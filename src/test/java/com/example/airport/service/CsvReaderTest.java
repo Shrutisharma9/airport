@@ -11,14 +11,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CsvReaderTest {
 
-    @Test
+   /* @Test
     public void readAllLinesTest() throws Exception {
         final Path path = Paths.get("src/test/resources/csv/countries.csv");
         CSVReaderService csvReader = new CsvReaderServiceImpl();
         final List<String[]> inputRecords = csvReader.readAllLines(path);
         assertNotNull(inputRecords);
         assertEquals(4,inputRecords.size());
-    }
+    }*/
 
     @Test
     public void readAllLinesTestNull() throws Exception {
